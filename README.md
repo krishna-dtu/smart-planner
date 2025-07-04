@@ -36,16 +36,6 @@ A minimalist yet smart task planner — combining a calendar, to-do list, remind
 
 ---
 
-## 📁 Project Structure
-
-smart-planner/
-├── index.html # UI & layout
-├── styles.css # Responsive styling & dark mode
-├── script.js # Task logic, rendering, theme, chart, etc.
-└── README.md # Project guide (you’re reading it)
-
----
-
 ## 🛠️ Tech Used
 
 | Tool        | Purpose                        |
