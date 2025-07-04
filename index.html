@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <button id="toggleThemeBtn" class="theme-toggle-icon" title="Toggle Theme">🌙</button>
+    <div id="introOverlay" class="intro-overlay">
+        <div class="intro-box">
+            <h2>Welcome to Smart Planner !!</h2>
+            <input type="text" id="usernameInput" placeholder="What we should call you..." />
+            <button onclick="saveUsername()">Continue</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="greeting" style="text-align: center;"></h2>
+
+
+        <h1>📝 Smart Planner</h1>
+
+        <div class="todo-section">
+            <input type="text" id="taskInput" placeholder="Enter task..." />
+            <input type="date" id="taskDate" />
+            <input type="time" id="taskTime" />
+            <button id="addTaskBtn">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="calendar-section">
+            <h2>📅 Calendar</h2>
+            <div class="calendar-labels">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div id="calendar"></div>
+            <div id="popup-task-box" class="popup-box" style="display: none;">
+                <h3 id="popup-date-heading"></h3>
+                <ul id="popup-task-list"></ul>
+            </div>
+
+        </div>
+        <div class="chart-section">
+            <h2>📊 Task Progress</h2>
+            <canvas id="progressChart" width="300" height="300"></canvas>
+        </div>
+
+    </div>
+    <button id="resetBtn" onclick="resetPlannerData()">🔄 Reset Planner</button>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
